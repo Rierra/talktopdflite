@@ -107,7 +107,5 @@ if retriever and (prompt := st.chat_input("How can I help you?")):
     with st.chat_message("assistant", avatar="💡"):
        st.markdown(bot_response)
         
-if __name__ == "__main__":
-    port = int(os.getenv("PORT", 8080))  # Render automatically sets PORT
-    st.run(port=port)
+
 
